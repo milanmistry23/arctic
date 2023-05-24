@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../dist/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="container mx-auto px-4">
+            <header>
+                <img src="../dist/images/logo.png" class="logo" />
+                <button class="ml-auto menu" onclick="openMenu()">
+                    <img src="../dist/images/menu.png" />
+                </button>
+            </header>
+            <div class="banner-text-bg">
+                <h1 class="banner-text text-white">
+                    BUILD WITH NEXT GENERATION OF ARCHITECT
+                </h1>
+            </div>
+            <div class="navigation">
+                <ul style="display: flex;">
+                    <li class="mr-1">
+                        <a href=""><img src="../dist/images/right-long-solid1.svg" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../dist/images/right-long-solid.svg" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="menudiv" class="menudiv">
+        <div class="container mx-auto px-4">
+            <header>
+                <img src="../dist/images/logo.png" class="logo" />
+                <button class="ml-auto menu" onclick="closeMenu()">
+                    <img src="../dist/images/close.png" width="25px" />
+                </button>
+            </header>
+            <div class="menu-list">
+                <ul>
+                    <li>
+                        <a class="p-3 menu-name italic" href="#">
+                            Homne
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 menu-name italic" href="#">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 menu-name italic" href="#">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p-3 menu-name italic" href="#">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openMenu() {
+            document.getElementById("menudiv").style.display = "block";
+        }
+
+        function closeMenu() {
+            document.getElementById("menudiv").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
